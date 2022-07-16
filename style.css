@@ -7,6 +7,7 @@
 }
 
 :root {
+  --main-gap: 20px;
   font-size: 16px;
   --br: 15px;
   --primary-blue: rgb(201 226 230);
@@ -78,9 +79,50 @@ section.card button {
 /* Media queries */
 
 /* Tablets: Iteration 1 and 2*/
+@media (min-width: 568px){
+  header h1 {
+    text-align: center;
+  }
+  section.card {
+    width: 47%;
+  }
+  div.card-container {
+    max-width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--main-gap);
+    margin: auto;
+  }
+}
 
 
 /* Desktop: Iteration 3 */
+/* Desktop */
 
+@media (min-width: 1024px) {
+  section.card {
+    width: calc(33.33% - var(--main-gap)*2 / 3);
+  }
+  div.card-container {
+    max-width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--main-gap);
+    margin: auto;
+  }
+}
 
 /* Bigger screens: Iteration 4 */
+
+@media (min-width: 1300px) {
+  section.card {
+    width: calc(25% - var(--main-gap)*3 / 4);
+  }
+  div.card-container {
+    max-width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--main-gap);
+    margin: auto;
+  }
+}
