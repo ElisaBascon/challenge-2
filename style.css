@@ -79,7 +79,7 @@ section.card button {
 /* Media queries */
 
 /* Tablets: Iteration 1 and 2*/
-@media (min-width: 568px){
+@media (min-width: 568px) {
   header h1 {
     text-align: center;
   }
